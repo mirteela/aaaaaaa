@@ -1,0 +1,115 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    color: ;
+    margin: 0;
+    padding: 0;
+    font-family:;
+    font-size: ;
+    line-height:;
+  }
+  
+  button {
+    background-color: #FED8B1; 
+    border: none;
+    color: #white;
+    font-size: 15px;
+    border-radius: 20px;
+    padding: 10px 10px;
+    text-align: center;
+  }
+  
+  
+  .nav-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px ;
+    margin: 0 0;
+  }
+  
+  
+  nav.mobile {
+    display: none;
+  }
+  
+  .menu-button{
+    position:fixed;
+    top: 20px ;
+    right: 20px ;
+  }
+  
+  nav.mobile .nav-links{
+    display: flex;
+    flex-direction: column;
+    background: #FED8B1;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    padding: 20px 50px;
+    transition: opacity 0.5s, transform 0.5s;
+  }
+  
+  nav.desktop .nav-links a {
+    margin: 0 10px;
+    color:black;
+    font-size:20px;
+  }
+  
+  
+  
+  nav.mobile .nav-links a {
+    margin: 10px 0;
+    color: black;
+    text-decoration: none;
+  }
+  
+  
+  
+  nav.mobile .nav-links.hidden {
+    opacity: 0;
+    transform: translateX(-20px);
+    pointer-events: none;
+  }
+  
+  
+  
+  
+  .close-menu{
+    align-self: flex-end;
+  }
+  
+  
+  
+  
+  
+  .footah{
+    padding: 40px;
+    background: #333;
+    margin-top: 40px;
+    text-align: center;
+    
+  }
+  
+  footer a {
+    color: white;
+    margin: 0 10px;
+  }
+  
+  
+  /* Responsive
+  ------------------------------------*/
+  @media (max-width: 600px){
+    nav.desktop{
+      display:none;
+    }
+    nav.mobile{
+      display:block;
+    }
+    
+  }
+  
+  
